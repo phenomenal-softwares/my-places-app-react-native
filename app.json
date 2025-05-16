@@ -24,6 +24,16 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-sqlite",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow this app to use your location.",
+          "locationWhenInUsePermission": "Allow this app to access your location while in use."
+        }
+      ]
+    ]
   }
 }
