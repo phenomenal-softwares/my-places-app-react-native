@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { useIsFocused } from "@react-navigation/native";
 import PlacesList from "../components/Places/PlacesList";
+import IconButton from "../components/UI/IconButton";
 
-function AllPlaces({ route }) {
+function AllPlaces({ navigation, route }) {
   const [loadedPlaces, setLoadedPlaces] = useState([]);
   const isFocused = useIsFocused();
   const addedPlaceIds = useRef(new Set());
@@ -14,7 +15,18 @@ function AllPlaces({ route }) {
       setLoadedPlaces((curPlaces) => [newPlace, ...curPlaces]);
       addedPlaceIds.current.add(newPlace.id);
     }
-  }, [isFocused, route.params?.place]);
+
+    navigation.setOptions({
+      headerRight: ({tintColor}) => (
+        <IconButton
+        icon="add"
+        size={24}
+        color={tintColor}
+        onPress={() => navigation.navigate("AddPlace")}
+      />
+      ),
+    });
+  }, [isFocused, route.params?.place, navigation]);
 
   return <PlacesList places={loadedPlaces} />;
 }
