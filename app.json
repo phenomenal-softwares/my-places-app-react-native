@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "my-places-app",
+    "name": "MySpots",
     "slug": "my-places-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,19 +8,20 @@
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0570c9"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.phenomenalproductions.costcontrol"
     },
     "web": {
       "favicon": "./assets/favicon.png"
