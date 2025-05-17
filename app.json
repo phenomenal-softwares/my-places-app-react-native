@@ -21,7 +21,11 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.phenomenalproductions.costcontrol"
+      "package": "com.phenomenalproductions.costcontrol",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -34,6 +38,11 @@
           "locationWhenInUsePermission": "Allow this app to access your location while in use."
         }
       ]
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f91e2ede-64f1-41bd-955d-340ccb411a9a"
+      }
+    }
   }
 }
