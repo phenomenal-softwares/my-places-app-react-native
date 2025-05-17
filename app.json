@@ -21,7 +21,7 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.phenomenalproductions.costcontrol",
+      "package": "com.phenomenalproductions.myspots",
       "permissions": [
         "android.permission.ACCESS_COARSE_LOCATION",
         "android.permission.ACCESS_FINE_LOCATION"
